@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadrink Coffee Shop</title>
+  <link rel="stylesheet" href="stylesadrink.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">☕ Sadrink Coffee Shop</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#order">Pesan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Halaman Utama -->
+  <section id="home" class="hero">
+    <h1>Selamat Datang di Sadrink Coffee Shop</h1>
+    <p>Kopi dan makanan terbaik di kota Anda!</p>
+    <button onclick="scrollToMenu()">Lihat Menu</button>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <h2>Menu Kopi</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Espresso</h3><p>Shot kopi pekat</p><span>Rp18.000</span></div>
+      <div class="card"><h3>Americano</h3><p>Espresso + air panas</p><span>Rp22.000</span></div>
+      <div class="card"><h3>Cappuccino</h3><p>Espresso + susu + foam</p><span>Rp25.000</span></div>
+      <div class="card"><h3>Latte</h3><p>Espresso + susu</p><span>Rp26.000</span></div>
+      <div class="card"><h3>Mocha</h3><p>Espresso + cokelat + susu</p><span>Rp28.000</span></div>
+      <div class="card"><h3>Kopi Susu Gula Aren</h3><p>Espresso + susu + gula aren</p><span>Rp24.000</span></div>
+    </div>
+
+    <h2>Menu Non-Kopi</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Matcha Latte</h3><p>Bubuk matcha + susu</p><span>Rp26.000</span></div>
+      <div class="card"><h3>Chocolate Latte</h3><p>Cokelat panas/dingin</p><span>Rp24.000</span></div>
+      <div class="card"><h3>Red Velvet Latte</h3><p>Red velvet + susu</p><span>Rp26.000</span></div>
+      <div class="card"><h3>Taro Latte</h3><p>Bubuk taro + susu</p><span>Rp24.000</span></div>
+    </div>
+
+    <h2>Minuman Lain</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Lemon Tea</h3><p>Teh hitam + lemon segar</p><span>Rp20.000</span></div>
+      <div class="card"><h3>Lychee Tea</h3><p>Teh + sirup leci</p><span>Rp22.000</span></div>
+      <div class="card"><h3>Peach Tea</h3><p>Teh + rasa buah peach</p><span>Rp22.000</span></div>
+      <div class="card"><h3>Mineral Water</h3><p>Air mineral botol</p><span>Rp10.000</span></div>
+    </div>
+
+    <h2>Makanan Berat</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Nasi Ayam Geprek</h3><p>Ayam goreng + sambal + nasi</p><span>Rp30.000</span></div>
+      <div class="card"><h3>Nasi Goreng Spesial</h3><p>Nasi goreng dengan topping lengkap</p><span>Rp32.000</span></div>
+      <div class="card"><h3>Chicken Katsu Rice</h3><p>Nasi + ayam katsu + saus kari</p><span>Rp35.000</span></div>
+      <div class="card"><h3>Pasta Carbonara</h3><p>Pasta krim dengan daging asap</p><span>Rp38.000</span></div>
+      <div class="card"><h3>Chicken Sandwich</h3><p>Roti isi ayam + selada + saus</p><span>Rp28.000</span></div>
+      <div class="card"><h3>Beef Burger</h3><p>Burger daging + keju + sayuran</p><span>Rp40.000</span></div>
+    </div>
+
+    <h2>Camilan dan Dessert</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Brownies</h3><p>Brownies cokelat fudgy</p><span>Rp20.000</span></div>
+      <div class="card"><h3>Banana Bread</h3><p>Roti pisang panggang</p><span>Rp18.000</span></div>
+      <div class="card"><h3>Choco Lava Cake</h3><p>Kue cokelat dengan lelehan cokelat</p><span>Rp25.000</span></div>
+      <div class="card"><h3>Cheesecake Slice</h3><p>Cheesecake lembut</p><span>Rp28.000</span></div>
+      <div class="card"><h3>Waffle Ice Cream</h3><p>Waffle + es krim + topping buah</p><span>Rp30.000</span></div>
+      <div class="card"><h3>Ice Cream Cup</h3><p>2 scoop es krim (vanila/cokelat)</p><span>Rp20.000</span></div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Sadrink Coffee Shop hadir untuk menyajikan kopi berkualitas dan makanan lezat dalam suasana nyaman dan ramah. Kami percaya bahwa setiap cangkir kopi memiliki cerita, dan setiap pelanggan adalah bagian dari perjalanan kami.</p>
+  </section>
+
+  <!-- Pemesanan -->
+  <section id="order">
+    <h2>Formulir Pemesanan</h2>
+    <form id="orderForm">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="menu">Menu yang Dipesan:</label>
+      <input type="text" id="menu" name="menu" required />
+
+      <label for="qty">Jumlah:</label>
+      <input type="number" id="qty" name="qty" required min="1" />
+
+      <label for="notes">Catatan Tambahan:</label>
+      <textarea id="notes" name="notes"></textarea>
+
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+    <p id="orderStatus"></p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact">
+    <h2>Hubungi Kami</h2>
+    <p><strong>Alamat:</strong> Jl. Kenangan No. 88, Bandung</p>
+    <p><strong>Telepon:</strong> (022) 123-4567</p>
+    <p><strong>Email:</strong> info@sadrink.id</p>
+    <p><strong>Instagram:</strong> @sadrinkcoffee</p>
+
+    <h3>Kirim Pesan</h3>
+    <form id="contactForm">
+      <label for="contact-name">Nama:</label>
+      <input type="text" id="contact-name" name="contact-name" required />
+
+      <label for="contact-email">Email:</label>
+      <input type="email" id="contact-email" name="contact-email" required />
+
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="contactStatus"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sadrink Coffee Shop. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="jssadrink.js"></script>
+</body>
+</html>
