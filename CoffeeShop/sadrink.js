@@ -19,7 +19,7 @@ if (orderForm) {
     const jumlah = document.getElementById('jumlah').value;
     const catatan = document.getElementById('catatan').value;
 
-    // Tampilkan data di console
+     // Cetak ke console untuk debug
     console.log('Nama:', nama);
     console.log('Menu yang dipesan:', menu);
     console.log('Jumlah:', jumlah);
