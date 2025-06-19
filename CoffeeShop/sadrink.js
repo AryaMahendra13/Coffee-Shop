@@ -25,10 +25,10 @@ if (orderForm) {
     console.log('Jumlah:', jumlah);
     console.log('Catatan:', catatan);
 
-    // Contoh feedback di halaman
-    const pesan = `Terima kasih, ${nama}. Pesanan Anda (${jumlah}x ${menu}) telah dikirim.`;
-    const hasil = document.createElement('p');
-    hasil.innerText = pesan;
-    document.body.appendChild(hasil);
-  });
+    // Tampilkan pesan ke pengguna
+    const pesan = Terima kasih, ${nama}. Pesanan Anda (${jumlah}x ${menu}) telah dikirim.;
+    const statusEl = document.getElementById('orderStatus');
+    if (statusEl) {
+      statusEl.textContent = pesan;
+    }
   
