@@ -13,11 +13,9 @@ if (orderForm) {
     e.preventDefault(); // Mencegah reload
 
   
-  document.getElementById('orderForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // mencegah reload halaman
-
+  // Ambil inputan berdasarkan ID yang benar
     const nama = document.getElementById('nama').value;
-    const menu = document.getElementById('menu').value;
+    const menu = document.getElementById('menuSelect').value;
     const jumlah = document.getElementById('jumlah').value;
     const catatan = document.getElementById('catatan').value;
 
