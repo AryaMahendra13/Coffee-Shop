@@ -83,26 +83,62 @@
     <p>Sadrink Coffee Shop hadir untuk menyajikan kopi berkualitas dan makanan lezat dalam suasana nyaman dan ramah. Kami percaya bahwa setiap cangkir kopi memiliki cerita, dan setiap pelanggan adalah bagian dari perjalanan kami.</p>
   </section>
 
-  <!-- Pemesanan -->
-  <section id="order">
-    <h2>Formulir Pemesanan</h2>
-    <form id="orderForm">
-      <label for="name">Nama:</label>
-      <input type="text" id="name" name="name" required />
+  <!-- Formulir Pemesanan -->
+<section id="order-form-section">
+  <h2>Formulir Pemesanan</h2>
+  <form id="orderForm">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required />
 
-      <label for="menu">Menu yang Dipesan:</label>
-      <input type="text" id="menu" name="menu" required />
+    <label for="menu">Menu yang Dipesan:</label>
+    <select id="menu" name="menu" required>
+      <optgroup label="Menu Kopi">
+        <option value="Espresso">Espresso</option>
+        <option value="Americano">Americano</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Latte">Latte</option>
+        <option value="Mocha">Mocha</option>
+        <option value="Kopi Susu Gula Aren">Kopi Susu Gula Aren</option>
+      </optgroup>
+      <optgroup label="Menu Non-Kopi">
+        <option value="Matcha Latte">Matcha Latte</option>
+        <option value="Chocolate Latte">Chocolate Latte</option>
+        <option value="Red Velvet Latte">Red Velvet Latte</option>
+        <option value="Taro Latte">Taro Latte</option>
+      </optgroup>
+      <optgroup label="Minuman Lain">
+        <option value="Lemon Tea">Lemon Tea</option>
+        <option value="Lychee Tea">Lychee Tea</option>
+        <option value="Peach Tea">Peach Tea</option>
+        <option value="Mineral Water">Mineral Water</option>
+      </optgroup>
+      <optgroup label="Makanan Berat">
+        <option value="Nasi Ayam Geprek">Nasi Ayam Geprek</option>
+        <option value="Nasi Goreng Spesial">Nasi Goreng Spesial</option>
+        <option value="Chicken Katsu Rice">Chicken Katsu Rice</option>
+        <option value="Pasta Carbonara">Pasta Carbonara</option>
+        <option value="Chicken Sandwich">Chicken Sandwich</option>
+        <option value="Beef Burger">Beef Burger</option>
+      </optgroup>
+      <optgroup label="Camilan dan Dessert">
+        <option value="Brownies">Brownies</option>
+        <option value="Banana Bread">Banana Bread</option>
+        <option value="Choco Lava Cake">Choco Lava Cake</option>
+        <option value="Cheesecake Slice">Cheesecake Slice</option>
+        <option value="Waffle Ice Cream">Waffle Ice Cream</option>
+        <option value="Ice Cream Cup">Ice Cream Cup</option>
+      </optgroup>
+    </select>
 
-      <label for="qty">Jumlah:</label>
-      <input type="number" id="qty" name="qty" required min="1" />
+    <label for="jumlah">Jumlah:</label>
+    <input type="number" id="jumlah" name="jumlah" min="1" required />
 
-      <label for="notes">Catatan Tambahan:</label>
-      <textarea id="notes" name="notes"></textarea>
+    <label for="catatan">Catatan Tambahan:</label>
+    <textarea id="catatan" name="catatan" rows="3"></textarea>
 
-      <button type="submit">Kirim Pesanan</button>
-    </form>
-    <p id="orderStatus"></p>
-  </section>
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+</section>
 
   <!-- Kontak -->
   <section id="contact">
