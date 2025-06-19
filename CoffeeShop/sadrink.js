@@ -20,16 +20,24 @@ function scrollToMenu() {
     });
   }
   
-  // Tangani pengiriman formulir kontak
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('contact-name').value;
-      const email = document.getElementById('contact-email').value;
-      const message = document.getElementById('message').value;
-      document.getElementById('contactStatus').textContent = `Pesan dari ${name} telah terkirim. Kami akan membalas ke ${email}.`;
-      contactForm.reset();
-    });
-  }
+  document.getElementById('orderForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // mencegah reload halaman
+
+    const nama = document.getElementById('nama').value;
+    const menu = document.getElementById('menu').value;
+    const jumlah = document.getElementById('jumlah').value;
+    const catatan = document.getElementById('catatan').value;
+
+    // Tampilkan data di console
+    console.log('Nama:', nama);
+    console.log('Menu yang dipesan:', menu);
+    console.log('Jumlah:', jumlah);
+    console.log('Catatan:', catatan);
+
+    // Contoh feedback di halaman
+    const pesan = `Terima kasih, ${nama}. Pesanan Anda (${jumlah}x ${menu}) telah dikirim.`;
+    const hasil = document.createElement('p');
+    hasil.innerText = pesan;
+    document.body.appendChild(hasil);
+  });
   
