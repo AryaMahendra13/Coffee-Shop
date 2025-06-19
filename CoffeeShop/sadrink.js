@@ -31,4 +31,7 @@ if (orderForm) {
     if (statusEl) {
       statusEl.textContent = pesan;
     }
-  
+   // Reset form
+    orderForm.reset();
+  });
+}
