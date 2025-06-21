@@ -79,3 +79,38 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
+/* Section Umum */
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Filter Menu Buttons */
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-buttons button {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #4b2e2e;
+    background-color: white;
+    color: #4b2e2e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .filter-buttons button:hover,
+  .filter-buttons button.active {
+    background-color: #4b2e2e;
+    color: white;
+  }
