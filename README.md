@@ -1,57 +1,47 @@
-##Project Coffee Shop 
+# Project-Coffee-Shop 
 
 Disini kami membuat project Web Coffee Shop untuk pengambangan front end dengan HTML, CSS, JavaScript.
 
-##Daftar Anggota:
+## Daftar Anggota:
 
--I Made Bagus Arya Mahendra
+-I Made Bagus Arya Mahendra (240010044)
 
--Dewa Gede Ariel Pramana
+-Dewa Gede Ariel Pramana (240010045)
 
--I Gusti Ngurah Bagus Aditnya Wisesa
+-I Gusti Ngurah Bagus Aditnya Wisesa (240010026)
 
--Kadek Oka Maetrya
+-Kadek Oka Maetrya (240010003)
 
-##Fitur
+## Fitur
 
-1. Navigasi Responsif
-   
-Menu navigasi di bagian atas halaman yang mengarah ke berbagai bagian seperti Beranda, Tentang, Pesan, dan Kontak.
+-Navigasi sticky yang responsif
 
-2. Hero Section
-   
-Tampilan pembuka yang menarik dengan background gambar dan tombol untuk scroll langsung ke bagian menu.
+-Hero section dengan slideshow gambar otomatis
 
-3. Menu Interaktif
-   
-Daftar menu yang dibagi dalam beberapa kategori seperti Kopi, Non-Kopi, Minuman Lain, Makanan Berat, dan Camilan.
+-Filter menu berdasarkan kategori (kopi, non-kopi, makanan, dll)
 
-4. Formulir Pemesanan
-   
-Form interaktif dengan input:
+-Galeri cafe berisi foto best seller dan interior
 
--Nama
+-Promo & Event yang bisa ditampilkan/sembunyikan
 
--Pilihan menu (belum support multiple select)
+-Formulir reservasi dengan validasi
 
--Jumlah pesanan
+-Desain mobile-friendly (responsif)
 
--Catatan tambahan
+## Cara Menjalankan
 
-5. Scroll Smooth ke Menu
-   
-Tombol "Lihat Menu" membawa pengguna langsung ke bagian daftar menu dengan animasi halus.
+1. Clone repositori ini: https://github.com/AryaMahendra13/Coffee-Shop
 
-6. Pesan Sukses
-   
-Setelah formulir dikirim, muncul pesan konfirmasi tanpa reload halaman.
+2. Buka file sadrink.html di browser
 
-##Cara Menjalankan
+## Teknologi
 
-Clone repositori ini: https://github.com/AryaMahendra13/Coffee-Shop
+-HTML
 
-Buka file sadrink.html di browser
+-CSS
 
-##Teknologi
+-JavaScript
 
-##Rencana selanjutnya
+## Tautan GitHub Pages
+
+https://github.com/AryaMahendra13/Coffee-Shop
