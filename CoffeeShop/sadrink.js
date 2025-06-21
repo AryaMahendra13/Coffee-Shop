@@ -71,7 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
-    // --- Promo Expand ---
+  });
+
+  // --- Promo Expand ---
   const togglePromo = document.getElementById('togglePromo');
   const promoContent = document.getElementById('promoContent');
   if (togglePromo && promoContent) {
@@ -102,11 +104,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-// --- Scroll ke Menu dari Tombol ---
-function scrollToMenu() {
-  const menuSection = document.getElementById('menu');
-  if (menuSection) {
-    menuSection.scrollIntoView({ behavior: 'smooth' });
-  }
-}
