@@ -71,4 +71,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
-    
+    // --- Promo Expand ---
+  const togglePromo = document.getElementById('togglePromo');
+  const promoContent = document.getElementById('promoContent');
+  if (togglePromo && promoContent) {
+    togglePromo.addEventListener('click', () => {
+      promoContent.classList.toggle('expanded');
+      promoContent.classList.toggle('hidden');
+    });
+  }
+
+  // --- Validasi Reservasi ---
+  const reservationForm = document.getElementById('reservationForm');
+  if (reservationForm) {
+    reservationForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('resName').value.trim();
+      const date = document.getElementById('resDate').value;
+      const time = document.getElementById('resTime').value;
+      const people = document.getElementById('resPeople').value;
+
+      if (!name || !date || !time || !people) {
+        alert('Harap isi semua kolom reservasi.');
+        return;
+      }
+
+      alert(`Terima kasih, ${name}. Reservasi Anda untuk ${people} orang pada ${date} pukul ${time} telah kami terima.`);
+      reservationForm.reset();
+    });
+  }
+});
+
+// --- Scroll ke Menu dari Tombol ---
+function scrollToMenu() {
+  const menuSection = document.getElementById('menu');
+  if (menuSection) {
+    menuSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
