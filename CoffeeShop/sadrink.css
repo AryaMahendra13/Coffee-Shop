@@ -149,3 +149,33 @@
     color: #4b2e2e;
   }
   
+ /* Hover Animation */
+  .card.hovered {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gallery */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-item {
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .gallery-caption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
