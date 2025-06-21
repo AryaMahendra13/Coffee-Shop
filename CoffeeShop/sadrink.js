@@ -104,3 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// --- Scroll ke Menu dari Tombol ---
+function scrollToMenu() {
+  const menuSection = document.getElementById('menu');
+  if (menuSection) {
+    menuSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
