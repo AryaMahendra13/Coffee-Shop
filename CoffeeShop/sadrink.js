@@ -1,9 +1,7 @@
 // --- Slideshow di Halaman Home ---
 let currentSlide = 0;
 const slides = [
-  'assets/interior1.jpg',
-  'assets/interior2.jpg',
-  'assets/interior3.jpg'
+  'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80',
 ];
 
 function showSlide(index) {
