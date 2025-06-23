@@ -26,8 +26,6 @@ Disini kami membuat project Web Coffee Shop untuk pengambangan front end dengan 
 
 -Formulir reservasi dengan validasi
 
--Desain mobile-friendly (responsif)
-
 ## Cara Menjalankan
 
 1. Clone repositori ini: https://github.com/AryaMahendra13/Coffee-Shop
