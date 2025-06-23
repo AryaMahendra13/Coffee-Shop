@@ -10,7 +10,7 @@ Disini kami membuat project Web Coffee Shop untuk pengambangan front end dengan 
 
 -I Gusti Ngurah Bagus Aditnya Wisesa (240010026)
 
--Kadek Oka Maetrya (240010003)
+-Kadek Oka Maetrya (240010002)
 
 ## Fitur
 
