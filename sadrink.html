@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadrink Coffee Shop</title>
+  <link rel="stylesheet" href="sadrink.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">☕ Sadrink Coffee Shop</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Galeri Cafe</a></li>
+        <li><a href="#promo">Promo & Event</a></li>
+        <li><a href="#reservation">Reservasi</a></li>
+        <li><a href="#contact">Kontak & Lokasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Halaman Utama -->
+  <section id="home" class="hero">
+    <h1>Selamat Datang di Sadrink Coffee Shop</h1>
+    <p>Tempat Ternyaman untuk Anda Nongkrong!</p>
+    <button onclick="scrollToMenu()">Lihat Menu</button>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="filter-buttons">
+      <button data-filter="all" class="active">Semua</button>
+      <button data-filter="kopi">Kopi</button>
+      <button data-filter="non-kopi">Non-Kopi</button>
+      <button data-filter="minuman">Minuman</button>
+      <button data-filter="makanan">Makanan</button>
+      <button data-filter="dessert">Dessert</button>
+    </div>
+    
+    <h2>Menu Kopi</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Espresso</h3><p>Shot kopi pekat</p><span>Rp18.000</span></div>
+      <!-- Tambahan lainnya -->
+    </div>
+  
+    <h2>Menu Non-Kopi</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Matcha Latte</h3><p>Matcha + susu</p><span>Rp26.000</span></div>
+      <!-- Tambahan lainnya -->
+    </div>
+  
+    <h2>Minuman Lain</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Lemon Tea</h3><p>Teh + lemon</p><span>Rp20.000</span></div>
+    </div>
+  
+    <h2>Makanan Berat</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Nasi Goreng Spesial</h3><p>Topping lengkap</p><span>Rp32.000</span></div>
+    </div>
+  
+    <h2>Camilan dan Dessert</h2>
+    <div class="menu-items">
+      <div class="card"><h3>Brownies</h3><p>Fudgy</p><span>Rp20.000</span></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Galeri Cafe</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://noir.web.id/wp-content/uploads/2022/04/kopi-susu-gula-aren.jpg.webp" alt="Best Seller Minuman" width="400">
+        <p>Best Seller - Kopi Susu Gula Aren</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nasi_Goreng_Sosis.jpg/1200px-Nasi_Goreng_Sosis.jpg" alt="Best Seller Makanan" width="400">
+        <p>Best Seller - Nasi Goreng Spesial</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://arsitagx-master-article.s3.ap-southeast-1.amazonaws.com/article-photo/1141/desain-coffeeshop-3.jpeg" alt="Interior Cafe 1" width="400">
+        <p>Interior Nyaman & Estetik</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://arsitagx-master-article.s3.ap-southeast-1.amazonaws.com/article-photo/1141/desain-coffeeshop-2.jpeg" alt="Interior Cafe 2" width="400">
+        <p>Ruang Duduk Luas & Cozy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section id="promo">
+    <h2>Promo & Event</h2>
+    <button id="togglePromo">Lihat Promo</button>
+    <div id="promoContent" class="hidden">
+      <h3>Promo Spesial Juni!</h3>
+      <ul>
+        <li>Beli 1 Kopi Gratis 1 Brownies (Senin - Jumat)</li>
+        <li>Diskon 20% untuk pembelian di atas Rp100.000</li>
+        <li>Live Music Setiap Sabtu Malam</li>
+      </ul>
+      <img src="https://sdmntprwestus2.oaiusercontent.com/files/00000000-a830-61f8-b1ed-c1379606bb76/raw?se=2025-06-23T01%3A21%3A49Z&sp=r&sv=2024-08-04&sr=b&scid=117ee3ab-4350-5739-979b-8c6f716264f2&skoid=b64a43d9-3512-45c2-98b4-dea55d094240&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-22T16%3A18%3A16Z&ske=2025-06-23T16%3A18%3A16Z&sks=b&skv=2024-08-04&sig=eB9QgwZjU%2BYg3bLQ54qfolOTBsPxNnTkH2pVhfXSTKw%3D" alt="Banner Promo" style="width: 80%; max-width: 400px; margin-top: 1rem;">
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reservation">
+    <h2>Formulir Reservasi</h2>
+    <form id="reservationForm">
+      <label for="resName">Nama:</label>
+      <input type="text" id="resName" name="resName" required>
+
+      <label for="resDate">Tanggal Reservasi:</label>
+      <input type="date" id="resDate" name="resDate" required>
+
+      <label for="resTime">Waktu:</label>
+      <input type="time" id="resTime" name="resTime" required>
+
+      <label for="resPeople">Jumlah Orang:</label>
+      <input type="number" id="resPeople" name="resPeople" min="1" required>
+
+      <button type="submit">Kirim Reservasi</button>
+    </form>
+  </section>
+
+  <!-- Kontak&Lokasi -->
+  <section id="contact">
+    <h2>Hubungi Kami</h2>
+    <p><strong>Alamat:</strong> Jl. Raya Sading,No.24</p>
+    <p><strong>Telepon:</strong> (87) 1123-4567-889</p>
+    <p><strong>Email:</strong> info@sadrink.id</p>
+    <p><strong>Instagram:</strong> @sadrinkcoffee</p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Sadrink Coffee Shop. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="sadrink.js" defer></script>
+</body>
+</html>
