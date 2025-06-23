@@ -11,7 +11,11 @@
     color: #333;
     background-color: #fffdf8;
   }
-  
+
+header{
+  position:fixed;
+}
+
   /* Navigasi */
   .navbar {
     display: flex;
